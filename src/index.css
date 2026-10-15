@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "DM Serif Display", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-handwriting: "Caveat", cursive;
+  
+  --color-canvas: #080B0D;
+  --color-warm-white: #F3F0E9;
+  --color-stone-muted: #AAA9A3;
+  --color-burnt-coral: #F07858;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #080B0D;
+  color: #F3F0E9;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom editorial serif display utility */
+.font-editorial {
+  font-family: var(--font-serif);
+}
+
+.font-interface {
+  font-family: var(--font-sans);
+}
+
+.font-signature {
+  font-family: var(--font-handwriting);
+}
+
+/* Hairline borders */
+.border-hairline {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.border-hairline-light {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+/* Reading column typography styles */
+.prose-editorial p {
+  margin-bottom: 1.75rem;
+  line-height: 1.85;
+  color: #DDD9D0;
+  font-size: 1.0625rem;
+  letter-spacing: -0.01em;
+}
+
+.prose-editorial p.lead {
+  font-size: 1.25rem;
+  line-height: 1.75;
+  color: #F3F0E9;
+}
+
+.prose-editorial h2 {
+  font-family: var(--font-serif);
+  color: #F3F0E9;
+  font-size: 2rem;
+  margin-top: 3.5rem;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.prose-editorial h3 {
+  font-family: var(--font-serif);
+  color: #F3F0E9;
+  font-size: 1.4rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Elegant scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080B0D;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(240, 120, 88, 0.4);
+}

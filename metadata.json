@@ -1,0 +1,8 @@
+{
+  "name": "The Digital Journal — Ishfaq Shafi",
+  "description": "An independent digital publication on code, cybersecurity, creativity, and the self-taught pursuit of knowledge by Ishfaq Shafi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
